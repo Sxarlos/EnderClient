@@ -1,6 +1,11 @@
 // Allow explicit GC calls (global.gc) used in idle mode
 app.commandLine.appendSwitch('js-flags', '--expose-gc')
 
+// Pinned to the app's original productName forever, regardless of rebrands -
+// userData (accounts, instances, settings) lives under this name, and changing
+// it would silently orphan every existing user's data on their next update.
+app.setName('Ender Client')
+
 import { app, shell, BrowserWindow, ipcMain, nativeImage, dialog } from 'electron'
 import { join, basename } from 'path'
 import { existsSync, mkdirSync, copyFileSync, readdirSync, statSync, unlinkSync } from 'fs'
@@ -74,7 +79,7 @@ function createWindow(): BrowserWindow {
     show: false,
     autoHideMenuBar: true,
     backgroundColor: '#0f1115',
-    title: 'Ender Launcher',
+    title: 'Thendrask Launcher',
     icon,
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),

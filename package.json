@@ -1,8 +1,8 @@
 {
-  "name": "ender-launcher",
-  "productName": "Ender Launcher",
-  "version": "0.3.23",
-  "description": "Ender Launcher",
+  "name": "thendrask-launcher",
+  "productName": "Thendrask Launcher",
+  "version": "0.3.24",
+  "description": "Thendrask Launcher",
   "main": "./out/main/index.js",
   "author": "",
   "license": "MIT",
@@ -17,8 +17,8 @@
     "package": "electron-vite build && electron-builder"
   },
   "build": {
-    "appId": "com.enderlauncher.app",
-    "productName": "Ender Launcher",
+    "appId": "com.thendrask.launcher",
+    "productName": "Thendrask Launcher",
     "directories": {
       "output": "dist"
     },
@@ -48,7 +48,7 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "Ender Launcher"
+      "shortcutName": "Thendrask Launcher"
     }
   },
   "dependencies": {
