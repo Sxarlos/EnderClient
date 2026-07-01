@@ -5,7 +5,7 @@ import { useApp } from '../store'
 type SettingsTab = 'general' | 'appearance' | 'apikeys'
 
 const THEMES: { id: ThemeId; name: string; desc: string; swatch: string; base: string }[] = [
-  { id: 'ender',    name: 'Ender',    desc: 'Classic dark green',  swatch: '#22c55e', base: '#111318' },
+  { id: 'ender',    name: 'Thendrask',    desc: 'Classic dark green',  swatch: '#22c55e', base: '#111318' },
   { id: 'amethyst', name: 'Amethyst', desc: 'Dark purple',         swatch: '#a855f7', base: '#111318' },
   { id: 'ocean',    name: 'Ocean',    desc: 'Cool sky blue',       swatch: '#0ea5e9', base: '#111318' },
   { id: 'crimson',  name: 'Crimson',  desc: 'Deep red',            swatch: '#f43f5e', base: '#111318' },
@@ -210,7 +210,7 @@ function UpdateCheckRow(): JSX.Element {
         <div className="min-w-0">
           <div className="text-sm font-medium" style={{ color: 'var(--text-bright)' }}>Check for Updates</div>
           <div className="text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>
-            Manually check if a new version of Ender Launcher is available.
+            Manually check if a new version of Thendrask Launcher is available.
           </div>
         </div>
         <button
@@ -621,7 +621,7 @@ function GeneralTab({ settings, onChange }: { settings: AppSettings; onChange: (
       <div className="flex items-center gap-3 py-1">
         <div className="flex-1 min-w-0">
           <div className="text-sm font-medium" style={{ color: 'var(--text-bright)' }}>Website</div>
-          <div className="text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>Visit the official Ender Launcher website.</div>
+          <div className="text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>Visit the official Thendrask Launcher website.</div>
         </div>
         <button
           onClick={() => window.api.shell.openExternal('https://ender-client.xyz')}
@@ -653,7 +653,7 @@ function GeneralTab({ settings, onChange }: { settings: AppSettings; onChange: (
       >
         <span style={{ fontSize: 18 }}>☕</span>
         <div className="min-w-0">
-          <div className="text-xs font-semibold" style={{ color: '#f5c842' }}>Enjoying Ender Launcher?</div>
+          <div className="text-xs font-semibold" style={{ color: '#f5c842' }}>Enjoying Thendrask Launcher?</div>
           <div className="text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>If you'd like to support development, buying me a coffee goes a long way.</div>
         </div>
       </div>
